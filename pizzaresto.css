@@ -1,0 +1,273 @@
+*{
+    background-color:black;
+    color: white;
+    
+}
+.nav-bar{
+    font-family: 'Ruda';
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    z-index: 10;
+}
+
+.social{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.nav-text{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    font-weight: 400;
+}
+
+.pizza1{
+    width: 1390px;
+}
+.intro::before{
+    content: 'Craving for a chessy pizza?';
+    display: block;
+    position: absolute;
+    top: 150px;
+    align-items: left;
+    font-family: 'Quattrocento';
+    color: white;
+    font-weight: 700;
+    font-size: 101px;
+    padding: 50px;
+    left: 30px;
+    right: 690px;
+    border-bottom:10px solid #B62828;
+}
+.intro::after{
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat dui. Vestibulum ut felis et lorem porta congue vitae nec turpis. Aliquam quis leo at nunc tempor faucibus et ac massa.';
+    display: block;
+    position: absolute;
+    top: 500px;
+    align-items: left;
+    font-family: 'Ruda';
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 50px;
+    left: 30px;
+    right: 690px;
+    line-height: 40px;
+}
+
+
+
+
+.abt-content{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    flex-flow: row wrap;
+    margin: 35px;
+    padding: 35px;
+    gap: 60px;  
+}
+.about1{
+    font-family: 'Quattrocento';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 0px;
+    border-width: fit-content;
+    display: flex;
+    align-items: center;
+    border-bottom:4px solid #B62828;
+    margin: 40px;
+    padding: 40px;
+    justify-content: space-around;
+    
+}
+.abt-text{
+    border-top:4px solid #B62828;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 40px;
+    
+}
+.dough{
+    position: relative;
+    width: 500px;
+}
+
+
+
+.menu1{
+    font-family: 'Quattrocento';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 0px;
+    border-width: fit-content;
+    display: flex;
+    align-items: center;
+    border-bottom:4px solid #B62828;
+    margin: 40px;
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.menu-text{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 35px;
+    padding: 35px;
+}
+
+
+.items{
+    margin: 35px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 45px;
+}
+.item1{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+}
+.item-image{
+    width: 200px;
+}
+.item-name{
+    color: #F2C94C;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+}
+.item-desc{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.find-us{
+    font-family: 'Quattrocento';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 0px;
+    border-width: fit-content;
+    display: flex;
+    align-items: center;
+    border-bottom:4px solid #B62828;
+    margin: 40px;
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.location{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+.phone{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+.find-content1{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    
+    gap: 80px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 40px;
+    padding: 40px;
+}
+.find-content2{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+.gmap{
+    width: 500px;
+}
+.mailid{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+.footer{ 
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 80px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 40px;
+    padding: 40px;
+}
+
+@media (max-width:650px) {
+    *{
+        align-items: center;
+    }
+    .items{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+    .footer{
+        align-items: center;
+        grid-template-columns: auto;
+
+    }
+    .find-content1{
+        align-items: center;
+        grid-template-columns: auto;
+
+    }
+    .abt-content{
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    .dough{
+        width: 250px;
+    }
+    .intro::after{
+        align-items: center;
+        font-size: 15px;
+        position: relative;
+        display: none;
+
+    }
+    .intro::before{
+        align-items: center;
+        font-size: 75px;
+        
+    }
+    
+    
+}
